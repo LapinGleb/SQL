@@ -111,6 +111,7 @@ select maker, count(*)
 
 --task7 (lesson4)
 -- По предыдущему view (count_products_by_makers) сделать график в colab (X: maker, y: count)
+--https://colab.research.google.com/drive/10NcEUmLIG-Im-gufPd3S68nHT-hsAPyK?usp=sharing
 
 --task8 (lesson4)
 -- Компьютерная фирма: Сделать копию таблицы printer (название printer_updated) и удалить из нее все принтеры производителя 'D'
@@ -150,6 +151,7 @@ select c.class,
 
 --task11 (lesson4)
 -- Корабли: По предыдущему view (sunk_ships_by_classes) сделать график в colab (X: class, Y: count)
+--https://colab.research.google.com/drive/10NcEUmLIG-Im-gufPd3S68nHT-hsAPyK?usp=sharing
 
 --task12 (lesson4)
 -- Корабли: Сделать копию таблицы classes (название classes_with_flag) и добавить в нее flag: если количество орудий больше или равно 9 - то 1, иначе 0
@@ -161,7 +163,8 @@ select *
 	
 --task13 (lesson4)
 -- Корабли: Сделать график в colab по таблице classes с количеством классов по странам (X: country, Y: count)
-
+--https://colab.research.google.com/drive/10NcEUmLIG-Im-gufPd3S68nHT-hsAPyK?usp=sharing
+	
 --task14 (lesson4)
 -- Корабли: Вернуть количество кораблей, у которых название начинается с буквы "O" или "M".
 select count(*)
@@ -182,3 +185,4 @@ select count(*)
 	where ship like '% %' and ship not like '% % %'
 --task16 (lesson4)
 -- Корабли: Построить график с количеством запущенных на воду кораблей и годом запуска (X: year, Y: count)
+
