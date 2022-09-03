@@ -80,8 +80,7 @@ select maker
 intersect
 	select maker 
 	from product
-	where type='PC' and model in (select model from PC
-								  order by ram, speed desc limit 1)
+	where type='PC' and model in (select model from PC order by ram, speed desc limit 1)
 
 
 
